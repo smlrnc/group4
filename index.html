@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Website</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    
+    <div class="navbar">
+        <div class="container">
+            <a class= "logo" href="#">Simple <span> Website </span></a>
+
+                <img id="mobile-cta" class="mobile-menu" src="image/menu.svg" alt="Open Navigation ">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit   " src="image/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"> <a href="#">Home</a></li>
+                    <li> <a href="#">Projects</a></li>
+                    <li> <a href="#">About me</a></li>
+                </ul>
+
+
+                <ul class="secondary-nav">
+                    <li> <a href="#">Contact</a></li>
+                    <li class="go-premium"> <a href="#">Messages Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    
+
+
+
+<section class="hero">
+    <div class="container">
+        <div class="left-col">
+            <p class="subhead">Group 4</p>
+            <h1>Simple Website</h1>
+
+            <div class="hero-cta">
+                <a href="#" class="primary-cta">Click This</a>
+                <a href="#" class="watch-video-cta">
+                    <img src="image/watch.svg" alt="Watch a video"> Watch a video
+                </a>
+                
+            </div>
+        </div>
+
+        <img src="image/illustration.svg" class="hero-img" alt="illustration">
+    </div>
+</section>
+
+
+ <section class="features-section">
+    <div class="container">
+
+        <ul class="features-list">
+            <li>Willjohn Puyong</li>
+            <li>Francis Cyril</li>
+            <li>John Benedict Casanes</li>
+            <li>Mark Anthony Clarin</li>
+            <li>Mark Ong</li>
+        </ul>
+            
+            <img src="image/Humility.jpg" alt="Man Holding Phone">
+    </div>
+ </section>
+
+
+
+ <section class="testimonials-section">
+    <div class="container">
+        <ul>
+            <li> 
+                    <img src="image/Humility.jpg" alt="">
+                    
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut quibusdam officiis mollitia itaque neque sint velit consequatur ex modi rerum tempore recusandae aliquam soluta, incidunt voluptatem nostrum iusto id.</blockquote>
+                    <cite> - Group 4 </cite>
+            </li>
+
+            <li>
+                    <img src="image/Humility.jpg" alt="">
+                    
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut quibusdam officiis mollitia itaque neque sint velit consequatur ex modi rerum tempore recusandae aliquam soluta, incidunt voluptatem nostrum iusto id.</blockquote>
+                    <cite> - Group 4 </cite>
+            </li>
+
+            <li>
+                <img src="image/Humility.jpg" alt="">
+                    
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut quibusdam officiis mollitia itaque neque sint velit consequatur ex modi rerum tempore recusandae aliquam soluta, incidunt voluptatem nostrum iusto id.</blockquote>
+                <cite> - Group 4 </cite>
+             </li>
+        </ul>
+    </div>
+ </section>
+
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-left">
+            <h2>Contact</h2>
+
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                
+                
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <input type="submit" class="send-message-cta" value="Send message">
+            </form>
+        </div>
+
+        <div class="container-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.7865722702245!2d121.04817351478792!3d14.496938089868538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf16039293ed%3A0xa2954a651d2cfea7!2sUpper%20Bicutan%20Barangay%20Hall!5e0!3m2!1sen!2sph!4v1668748944907!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+
+    </div>
+</section>
+
+
+<script>
+    const mobileBtn = document.getElementById('mobile-cta')
+    nav = document.querySelector('nav')
+    mobileBtnExit = document.getElementById ('mobile-exit');
+        
+    
+    mobileBtn.addEventListener('click',() => {
+        nav.classlist.add('menu-btn');
+    })
+
+    mobileBtn.addEventListener('click',() => {
+        nav.classlist.add('menu-btn');
+    })
+
+</script>
+</body>
+</html>
